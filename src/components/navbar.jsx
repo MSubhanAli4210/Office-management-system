@@ -7,9 +7,10 @@ export default function Navbar() {
 
   const navItems = [
     { to: "/", label: "Home" },
-    { to: "/about", label: "About" },
     { to: "/attendance", label: "Attendance" },
     { to: "/sales", label: "Sales" },
+    { to: "/prayer", label: "Prayer Timings" },
+    { to: "/about", label: "About" },
   ];
 
   return (
