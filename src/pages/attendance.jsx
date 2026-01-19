@@ -23,7 +23,7 @@ export default function Attendance() {
         <div className="relative group">
           <div className="absolute -inset-0.5 bg-linear-to-r from-purple-600 to-blue-600 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-500"></div>
           <div className="relative bg-slate-800 rounded-2xl p-8 md:p-12 shadow-2xl transform group-hover:scale-105 transition duration-300">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-linear-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-purple-300 animate-puls">
+            <h1 className="text-5xl font-bold mb-4 bg-linear-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-transparent">
               Attendance Page
             </h1>
               <div className="mt-10 relative group">
