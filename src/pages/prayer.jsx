@@ -32,7 +32,9 @@ export default function Prayer() {
   return (
     <div className="min-h-screen bg-linear-to-br from-slate-900 via-purple-900 to-slate-900 p-8">
       <div className="max-w-7xl mx-auto">
-        <div className="relative group">
+        {/* Animated card wrapper */}
+        <div className="relative group card-enter">
+          
           {/* Glow */}
           <div className="absolute -inset-0.5 bg-linear-to-r from-purple-600 to-blue-600 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-500"></div>
 
@@ -88,10 +90,27 @@ export default function Prayer() {
                 </tbody>
               </table>
             </div>
-
           </div>
         </div>
       </div>
+
+      {/* Card animation */}
+      <style>{`
+        @keyframes cardEnter {
+          from {
+            opacity: 0;
+            transform: translateY(30px) scale(0.97);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+          }
+        }
+
+        .card-enter {
+          animation: cardEnter 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+      `}</style>
     </div>
   );
 }
